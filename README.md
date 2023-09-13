@@ -3,6 +3,7 @@
 ## Stack
 
 + React + TypeScript
++ React Router
 + Vite
 + Zustand + SWR
 + TailwindCSS + NextUI
@@ -10,4 +11,4 @@
 
 ## How to use
 + Replace `my_app` in Docker
-+ Replace 
++ Replace project name in package.json
