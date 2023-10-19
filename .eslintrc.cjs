@@ -8,7 +8,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'eslint-config-prettier'
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs','README.md','tailwind.config.js'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh','simple-import-sort'],
   rules: {

@@ -2,12 +2,12 @@
 
 ## Stack
 
-+ React + TypeScript
-+ React Router
-+ Vite
-+ Zustand + SWR
-+ TailwindCSS + NextUI
-+ Docker
++ 🚀 Framework: React + React Router + TypeScript
++ 🛠️ Build Tool: Vite
++ 🧬 State Management: Jotai
++ 🌐 Data Fetching: React Query + Axios
++ 🎨 CSS Framework: TailwindCSS + shadcn/ui
++ 🐳 Containerization: Docker
 
 ## How to use
 + Replace `my_app` in Docker

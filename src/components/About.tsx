@@ -1,14 +1,26 @@
-import { fetcher } from '@/api'
-import { Button } from '@nextui-org/react'
+import { useQuery } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
-import useSWR from 'swr'
+
+import { getReportData } from '@/api'
+
+import { Button } from './ui/button'
+
 export default function About() {
-  const { data, error, isLoading } = useSWR('https://jsonplaceholder.typicode.com/posts/1', fetcher)
-  if (error) return 'An error has occurred.'
-  if (isLoading) return 'Loading...'
+  const { isPending, error, data } = useQuery({
+    queryKey: ['repoData'],
+    queryFn: getReportData
+  })
+
+  if (isPending) return 'Loading...'
+
+  if (error) return 'An error has occurred: ' + error.message
+
   return (
-    <div>
-      <h1>{data.title}</h1>
+    <div className="flex flex-col">
+      <h1>{data.name}</h1>
+      <p>{data.description}</p>
+      <strong>👀 {data.subscribers_count}</strong> <strong>✨ {data.stargazers_count}</strong>{' '}
+      <strong>🍴 {data.forks_count}</strong>
       <Button>
         <Link to="/">Home</Link>
       </Button>
