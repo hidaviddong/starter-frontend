@@ -2,7 +2,7 @@
   "name": "my-frontend-startup",
   "private": true,
   "version": "1.0.1",
-  "author": "David Dong",
+  "author": "David Dong <hi@daviddong.me>",
   "type": "module",
   "scripts": {
     "dev": "vite",
