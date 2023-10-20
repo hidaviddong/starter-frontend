@@ -11,7 +11,7 @@ export default function About() {
     queryFn: getReportData
   })
 
-  if (isPending) return <>'Loading...'</>
+  if (isPending) return <>Loading...</>
 
   if (error) return <>'An error has occurred: ' + {error.message}</>
 
