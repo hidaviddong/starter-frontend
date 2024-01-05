@@ -2,8 +2,7 @@ import { useQuery } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
 
 import { getReportData } from '@/api'
-
-import { Button } from './ui/button'
+import { Button } from '@/components/ui/button'
 
 export default function About() {
   const { isPending, error, data } = useQuery({

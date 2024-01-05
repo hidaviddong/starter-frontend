@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 
-import About from '@/components/About'
-import Home from '@/components/Home'
+import About from '@/pages/about'
+import Home from '@/pages/home'
 
 export default function App() {
   return (
