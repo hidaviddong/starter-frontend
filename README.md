@@ -1,4 +1,4 @@
-# My-FrontEnd-StartUp
+# My-FrontEnd-Setup
 
 ## Stack
 
