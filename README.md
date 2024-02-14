@@ -1,6 +1,6 @@
 # My-FrontEnd-Setup
 
-## Stack
+## Tech Stack
 
 + 🚀 Framework: React + React Router + TypeScript
 + 🛠️ Build Tool: Vite
